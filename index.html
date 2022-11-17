@@ -8,6 +8,9 @@
     <title>HACKANOVA</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/bg.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="css/glightbox.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
@@ -21,24 +24,26 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body x-data="
+<body  x-data="
       {
         scrolledFromTop: false
       }
-    " x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" class="a0 dark:a1" style="background-color:#07102D ;">
+    " x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" class="a0 dark:a1" style="background-image: url(images/hb.png)">
 
     
-    <header x-data="
+    <header  x-data="
         {
           navbarOpen: false,
           dropdownOpen: false
         }
-      " :class="scrolledFromTop ? 'a0 dark:a1 a2 dark:a2 a3 a4' : 'a0 dark:a1' " class="a5 a6 a7 a8 a9 aa wow fadeInUp" data-wow-delay=".2s" style="background-color: #2e335a;">
-        <div class="ab">
+      " :class="scrolledFromTop ? 'a0 dark:a1 a2 dark:a2 a3 a4' : 'a0 dark:a1' " class="a5 a6 a7 a8 a9 aa wow fadeInUp" data-wow-delay=".2s" style="background: rgb(2,0,36);
+      background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,14,121,0.676908263305322) 100%, rgba(0,212,255,1) 100%); ">
+        <div class="ab" style="height:84px">
             <div class="a6 ac a7 ad ae">
                 <div class="af ag ah">
                     <a href="index.html" :class="scrolledFromTop ? 'ai lg:aj' : 'ak lg:ai' " class="a5 al">
 <img src="images/4.png" alt="logo" class="a5 dark:am" style="width: 60px;" />
+<img src="images/tcet1.png" alt="logo" style="width: 150px; position:relative; left:24px; top:-60px;" />
 
 <img src="images/4.png" alt="logo" class="a5 am dark:al" style="width: 60px;"/>
 </a>
@@ -50,52 +55,60 @@
 <span :class="navbarOpen && 'aD' " class="ae az[30px] aA[2px] aB[6px] al aC dark:a0"></span>
 <span :class="navbarOpen && 'ay[-8px] aE[135deg]' " class="ae az[30px] aA[2px] aB[6px] al aC dark:a0"></span>
 </button>
-                        <nav :class="!navbarOpen && 'am' " id="navbarCollapse" class="ao aF lg:aG aH a0 dark:aC aI aw aJ[250px] a5 lg:aK dark:lg:aK lg:ah lg:a5 ap aL lg:al lg:aM lg:aN">
-                            <ul class="aO lg:a6">
-                                <li>
-                                    <a href="#home" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+<style>
+    li a {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        float: left;
+        font-size: larger;
+        font-weight: bold;
+    }
+</style>
+                        <nav :class="!navbarOpen && 'am' " id="navbarCollapse" class="ao aF lg:aG aH a0 dark:aC aI aw aJ[250px] a5 lg:aK dark:lg:aK lg:ah lg:a5 ap aL lg:al lg:aM lg:aN" style="position:relative; left:2px; top:-40px;">
+                            <ul class="aO lg:a6"  >
+                                <li >
+                                    <a href="#home" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;" >
 Home
 </a>
                                 </li>
                                 <li>
-                                    <a href="#about" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#about" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;">
 About
 </a>
                                 </li>
                                 <li>
-                                    <a href="#timeline" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#timeline" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;">
 Timeline
 </a>
                                 </li>
                                 <li>
-                                    <a href="#prize" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#prize" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;">
 Prize
 </a>
                                 </li>
                                 <li>
-                                    <a href="#gallery" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#gallery" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;">
 Gallery
 </a>
                                 </li>
                                 <li>
-                                    <a href="#faq" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#faq" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none;">
 FAQ
 </a>
                                 </li>
                                 <li>
-                                    <a href="#contact" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX">
+                                    <a href="#contact" :class="scrolledFromTop ? 'aj lg:aP' : 'aj lg:aQ' " class="scroll-menu aR aS aT hover:aU lg:aV a6 lg:aW xl:aX" style="text-decoration: none; ">
 Contact Us
 </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="af ag ah">
-                     
-    <img src="images/tcet1.png" alt="logo" class="a5 dark:am" style="width: 100px;"     />
-    <img src="images/tcet1.png" alt="logo" class="a5 am dark:al" style="width: 100px;"  />
+                    <div >
     
-    </a>
+    
+    
+    
+    
                     </div>
 
                         
@@ -104,23 +117,51 @@ Contact Us
             </div>
         </div>
     </header>
+    <br><br>
+    <section id="example1">
+        
+            <div id="hey"><div id="layer-up"></div></div>
+            <div id="layer-0">
+                
+                
+                <div id="layer-1">
+                    <div id="layer-2">
+                        <div id="lines">
+                            <div id="layer-corner"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="mtnZZZ"></div>
+
+       
+
+            
+            
+            
+        <div ></div>
+    </section>
 
 
     <section id="home" >
-        <div class="a2V a2W a2X dark:a2Y[#3c3e56] dark:a2Z a3b[20px] a2U a3c 2xl:a3d[60px] a3e lg:a3f" style="background-color:#3c3e56 ;">
+       
+
+        <div  >
             <div class="ab" >
                 <div class="a6 a1K a7 ac" >
                     <div class="a5 lg:a2u/2 af" >
-                        <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s" >
-                            <h1 class="a25 a1j dark:a1k a2_ md:a30[45px] a31 md:a31 a1O">
-                                HACKNOVA 2.0
+                        <div class="a3g lg:a3h aJ[470px] wow fadeInUp" data-wow-delay=".2s"  >
+                            <div >
+                                <img src="images/Hackanova Logo-01.png" alt="" style="position:relative; left:2px; top:-90px; height:290px" >
+                            </div>
                                 
-                            </h1>
-                            <p class="a25 aR aT a3i">
+                           
+                            <p class="a25 aR aT a3i" style="position:relative; left:2px; top:-140px;">
                                 HACKANOVA 2.0 is the amalgamation of some of the nation's greatest technological minds, with an ideal platform for technology enthusiasts to demonstrate their talents and ingenuity.
                             </p>
                             <div class="a6 a7">
-                                <a href="#about" class="aR a2x a1k a1q a1N aF a3j a1t hover:a1u a3k">
+                                <a href="#about" class="aR a2x a1k a1q a1N aF a3j a1t hover:a1u a3k" style="position:relative; left:2px; top:-190px;">
 Explore
 </a>
                                 <a href="javascript:void(0)" class="a6 a7 a2x aR a1j dark:a1k hover:aU dark:hover:aU aY a1t glightbox">
@@ -134,24 +175,26 @@ Explore
                     </div>
                     <div class="a5 lg:a2u/2 af">
                         <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-wf51" class="countdown-timer " data-style="flip3" data-timezone="Asia/Kolkata"  data-textcolor="#00000" data-date="2022-10-06 10:00" data-background="#6d41f0" data-digitscolor="#ffffff" data-unitscolor="#0000" >EVENT BEGINS IN..</a>
-                        
+                        <div id="overlay" style="position:relative; top:-90px;"><h1 style="padding-left: 1.5vw;">Begins In</h1>
+<a href="https://logwork.com/countdown-wf51" class="countdown-timer " data-style="flip3" data-timezone="Asia/Kolkata"  data-textcolor="#00000" data-date="2022-10-06 10:00" data-background="#6d41f0" data-digitscolor="#ffffff" data-unitscolor="#0000" >.</a>
+</div>
                     </div>
                 </div>
             </div>
         </div>
+       <br><br><br><br> <br><br><br><br> <br><br><br><br>
     </section>
-
-    <section id="about" class="a2s[110px]" >
-        <div class="ab">
-            <div class="a6 a1p ac">
+ <br><br>
+    <section id="about" class="a2s[110px]"  >
+        <div class="ab" style="position:relative; top:-290px;"  >
+            <div class="a6 a1p ac" >
                 <div class="a5 af">
-                    <div class="aJ[510px] a2f a2g a3p[70px] wow fadeInUp" data-wow-delay=".2s">
-                        <h2 class="a1X a3q sm:a2_ a1j dark:a1k a28" style="color: white;">
-                            About Us
-                        </h2>
-                        <p class="a25 aR aT">
-                            There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.
+                    <div class="aJ[10px] a2f a2g a3p[20px] wow fadeInUp" data-wow-delay=".2s"  >
+                        
+                        <p class="a25 aR aT" style="padding-top:-900px;">
+                            <h2 class="a1X a3q sm:a2_ a1j dark:a1k a28" style="color: white;">
+                                About Us
+                            </h2>
                         </p>
                     </div>
                 </div>
@@ -159,20 +202,21 @@ Explore
         </div>
    
     
-        <div class="container" data-aos="fade-up" style="background-color:#1c233e ;">
+        <div class="container" data-aos="fade-up" style="background-image: url(images/hb.png) ; min-height:1vh; position:relative;  top:-290px;" >
   
-          <div class="row">
+          <div class="row" style="padding-top: -120px;">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/blog/blog-1.jpg" class="img-fluid" alt="">
+              <img src="images/about.JPG"  alt="" width="1400px">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-              <h3 style="color: white;">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-              <p class="fst-italic" style="color: white;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
               
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              <p class="fst-italic" style="color: white;">
+                Thakur College of Engineering & Technology is pleased to announce the
+                2nd edition of Hackanova, our most awaited technical event. TCET's
+                Hackanova aims at holding hackathons on the social themes and building
+                their solutions through technology, spreading an endless technical
+                exposure. TCET's Hackanova gathers students from institutions all around
+                India and gives them the opportunity to flaunt their technical skills.
               </p>
             </div>
           </div>
@@ -184,8 +228,8 @@ Explore
 
 
 
-    <section id="timeline" class="a2s[100px]" style="background-color:#07102D ;">
-        <div class="container" style="background-color:#07102D ;">
+    <section id="timeline" class="a2s[100px]" style="background-image: url(images/hb.png) ;">
+        <div class="container" style="background-image: url(images/hb.png) ;">
             <div class="timeline" >
               <ul>
                 <li style="background-color: white;">
@@ -227,12 +271,61 @@ Explore
 
     
 
-    <section id="cta" class="a3D">
-        <div class="ab">
-            <div class="a2V a2W a2X dark:a2Y[#3c3e56] dark:a2Z a3b[20px] a1s sm:a3j md:a3K lg:a3L xl:a3K wow fadeInUp" data-wow-delay=".2s">
-                <div class="a6 a1K a1S ac">
-                  
-                            <marquee behavior="alternate" direction="right"><img src="images/hack.png" alt="" style="padding-left: 340px;"></marquee>
+    <section >
+
+        <div class="component" style="background: #deebef;
+        color: #34495e;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-weight: 400;
+        line-height: 1.2;">
+            <ul class="align">
+                <li>
+                    <figure class='book'>
+
+                        <!-- Front -->
+
+                        <ul class='hardcover_front'>
+                            <li>
+                                <div class="coverDesign blue">
+                                    <h1>Theme</h1>
+                                    <p>BOOK</p>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+
+                        <!-- Pages -->
+
+                        <ul class='page'>
+                            <li></li>
+                            <li>
+                                <a class="btn" href="#">Publick safety and security</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+                        <!-- Back -->
+
+                        <ul class='hardcover_back'>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class='book_spine'>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <figcaption >
+                            
+                            <span>By Nikola Petrovic</span>
+                            <p>Technology and security go hand in hand with each other; and with technology booming exponentially in the last few decades, there has also been an increase in the ones exploiting the technology for their gain. Therefore, Public Safety and Security have grown to be one of the most important issues today. According to one research, the market size for public safety and security is estimated to double in the next five years. Keeping these points in mind, Hackanova 2.0 aims to focus on this domain and give a platform for the students to understand the problems the industry is currently facing and a chance to come up with a solution for these problems.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+
     </section>
 
 
@@ -442,48 +535,106 @@ Software/Hardware
 
     
 
-<section id="gallery" class="a3D" >
-        <div class="a2r dark:aC a2s[100px] a2t[70px]" style="background-color:#07102D ;">
-            <div class="ab">
-                <div class="a6 a1p ac">
-                    <div class="a5 af">
-                        <div class="aJ[510px] a2f a2g a3p[70px] wow fadeInUp" data-wow-delay=".2s">
-                            <h2 class="a1X a3q sm:a2_ a1j dark:a1k a28" style="color: white;">
-                                Gallery
-                            </h2>
-                            
-                        </div>
-                    </div>
-                </div>
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./images/blog/blog-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/blog/blog-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/blog/blog-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+    
+    <section >
+        <center><h2 class="a1X a3q sm:a2_ a1j dark:a1k a28" style="color: white;"> Gallery
+            
+        </h2></center>
+        <br>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+        <div class="gallery">
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-2.jpg" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-4.jpg" alt="Portrait by Alex Perez" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-3.jpg" alt="Portrait by Noah Buscher" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
                 
-                </div>
+                <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-5.jpg" alt="Portrait by Ivana Cajina" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-6.jpg" alt="Portrait by Sam Burriss" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-7.jpg" alt="Portrait by Mari Lezhava" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+                
+                <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-8.JPG" alt="Portrait by Ethan Haddox" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-9.JPG" alt="Portrait by Amir Geshani" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="gallery__column">
+                <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-14.jpeg" alt="Portrait by Guilian Fremaux" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+        
+                <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-13.JPG" alt="Portrait by Jasmin Chew" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
+                
+                <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="images/blog/blog-15.jpeg" alt="Portrait by Dima DallAcqua" class="gallery__image">
+                        <figcaption class="gallery__caption"></figcaption>
+                    </figure>
+                </a>
             </div>
         </div>
     </section>
