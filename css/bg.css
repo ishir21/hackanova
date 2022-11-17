@@ -1,6 +1,9 @@
 body {
     height: 100%;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    top:0;
+    left:0;
  }
 #example1 {
 background: radial-gradient(ellipse at center, rgba(127,0,173,0.6) 0%,
@@ -10,7 +13,7 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
 background-size: cover;
 z-index:-5;
 color: white;
-overflow: hidden;
+overflow:auto;
 font-family: 'Monoton', monospace;
 font-size: 2em;
 }
