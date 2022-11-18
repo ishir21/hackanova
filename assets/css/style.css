@@ -50,8 +50,15 @@
 
 /* preloader */
 
-
-
+/*#preloader {
+  width: 100%;
+  height: 100vh;
+  background: black url("/assets/images/loader.gif") no-repeat center;
+  background-size: 80%;
+  position: fixed;
+  z-index: 100;
+}
+*/
 /* preloader-end */
 
 /* timeline */
@@ -138,8 +145,7 @@
 }
 
 body {
-  
-  
+  background-color: var(--black);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -182,7 +188,7 @@ body {
 
 .overlay {
   /* background-color: #0f1923; */
-  
+  background-color: #000000;
   height: var(--overlay-height);
   width: var(--overlay-width);
   position: absolute;
