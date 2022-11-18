@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142860092-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142860092-1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HACKANOVA 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <meta name="author" content="Codecell" />
+    <meta name="geo.region" content="IN" />
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/gallery.css" rel="stylesheet" />
+    <link href="assets/css/countdown.css" rel="stylesheet" />
+    <script src="sv-countdown.js"></script>
+
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body
+    style="
+      background-image: url(empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration_35913-2368.webp);
+    "
+  >
+    <!-- preloader -->
+
+    <div id="preloader"></div>
+
+    <!-- Countdown -->
+
+    <!-- Svgs -->
+
+    <div>
+      <div class="overlay overlay-in">
+        <video autoplay muted loop id="myVideo">
+          <source src="bg.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <nav class="navbar navbar-expand-lg sticky-top">
+          <a class="navbar-brand1" href="#"
+            ><img src="assets/images/4.png" alt="logo"
+          /></a>
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="flex-nav-item1"></div>
+            <div id="flex-nav-item2">
+              <ul
+                class="navbar-nav mr-auto menu__list"
+                style="margin: 0 auto; text-align: center"
+              >
+                <li class="nav-item menu__item">
+                  <a href="#home" class="nav-link scroll menu__link">Home</a>
+                </li>
+                <li class="nav-item menu__item">
+                  <a href="#about" class="nav-link scroll menu__link">About</a>
+                </li>
+
+                <li class="nav-item menu__item">
+                  <a href="#timeline" class="nav-link scroll menu__link"
+                    >Timeline</a
+                  >
+                </li>
+
+                <li class="nav-item menu__item">
+                  <a href="#prizes" class="nav-link scroll menu__link"
+                    >Prizes</a
+                  >
+                </li>
+
+                <li class="nav-item menu__item">
+                  <a href="#sponsorsNav" class="nav-link scroll menu__link"
+                    >Sponsors</a
+                  >
+                </li>
+                <li class="nav-item menu__item">
+                  <a href="#gallery" class="nav-link scroll menu__link"
+                    >Gallery</a
+                  >
+                </li>
+
+                <li class="nav-item menu__item">
+                  <a href="#FAQs" class="nav-link scroll menu__link">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div id="home">
+          <div class="">
+            <div
+              class="inner-responsive-page home-page-container-wrapper"
+              id="mainPage"
+            >
+              <div class="home-page-container">
+                <div class="tcet-hack-text">
+                  <div class="red-line outline-text">
+                    <img src="Hackanova Logo-01.png" style="width: 37.5em" />
+                  </div>
+                </div>
+                <div class="text-and-button">
+                  <style>
+                    * {
+                      margin: 0;
+                      padding: 0;
+                    }
+                    body {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      min-height: 100vh;
+                      background: #000;
+                    }
+                    a {
+                      text-decoration: none;
+                      color: inherit;
+                      font-size: 24px;
+                    }
+
+                    .text-and-button p {
+                      font-weight: 700;
+                      text-align: center;
+                      font-size: 40px;
+                      font-family: Hack, sans-serif;
+                      text-transform: uppercase;
+                      background: linear-gradient(90deg, #000, #fff, #000);
+                      letter-spacing: 5px;
+                      -webkit-background-clip: text;
+                      background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-repeat: no-repeat;
+                      background-size: 80%;
+                      animation: shine 10s linear infinite;
+                      position: relative;
+                    }
+
+                    @keyframes shine {
+                      0% {
+                        background-position-x: -500%;
+                      }
+                      100% {
+                        background-position-x: 500%;
+                      }
+                    }
+                  </style>
+                  <p>
+                    Welcome to Hackathon <br /><a
+                      href="https://codepen.io/grohit/"
+                      >Lst's Build</a
+                    >
+                  </p>
+                  <div>
+                    <div
+                      class="apply-button"
+                      data-button-theme="light"
+                      style="height: 44px; width: 312px"
+                    ></div>
+                  </div>
+
+                  <a
+                    target="_blank"
+                    style="z-index: 10"
+                    class="text-decoration-none text-white"
+                  >
+                    <br />
+                    <div class="guide-btn">Registration begins soon</div>
+                  </a>
+                  <br />
+                  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                  <a
+                    href="https://logwork.com/countdown-xqy9"
+                    class="countdown-timer"
+                    data-style="circles"
+                    data-timezone="Asia/Kolkata"
+                    data-textcolor="#ffffff"
+                    data-date="2023-01-20 18:06"
+                    data-unitscolor="#ffffff"
+                    >Begins in</a
+                  >
+                  <!-- Devfolio Button Pending -->
+                  <!-- <div 
+	                                    class="apply-button" 
+	                                    data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+	                                    data-button-theme="light"
+	                                    style="height: 44px; width: 312px"
+                                    ></div> -->
+                </div>
+              </div>
+              <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+              <a
+                href="https://logwork.com/countdown-xqys"
+                class="countdown-timer"
+                data-style="circles"
+                data-width="619"
+                data-timezone="Asia/Kolkata"
+                data-date="2023-01-20 09:00"
+                >Countdown</a
+              >
+            </div>
+          </div>
+
+          <div id="about"></div>
+          <div class="inner-responsive-page">
+            <h1 class="section-heading">About</h1>
+            <div class="container">
+              <div class="row align-items-center" id="aboutmr">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                  <img src="assets/images/blog-6.jpg" alt="" id="aboutimg" />
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 abouttext" style="color: white">
+                  <br />
+                  <div class="about-blocks">
+                    Thakur College of Engineering & Technology is pleased to
+                    announce the 2nd edition of Hackanova, our most awaited
+                    technical event. TCET's Hackanova aims at holding hackathons
+                    on the social themes and building their solutions through
+                    technology, spreading an endless technical exposure. TCET's
+                    Hackanova gathers students from institutions all around
+                    India and gives them the opportunity to flaunt their
+                    technical skills.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="timeline">
+            <div class="inner-responsive-page">
+              <h1 class="section-heading">Timeline</h1>
+              <!-- <h2 class="section-heading" >Day 1, 9th April</h2> -->
+
+              <div class="comment">
+                <p>
+                  <b>15th Nov,2022</b><br />
+                  <b>Registration Commences</b>
+                </p>
+
+                <p>
+                  <b>5th Jan,2023</b> <br />
+                  <b>Online idea submission deadline</b>
+                </p>
+                <p>
+                  <b>10th Jan,2023</b> <br />
+                  <b>Announcement of shortlisted teams</b>
+                </p>
+
+                <div class="vertical"></div>
+              </div>
+              <div class="prize-name fs-inc1 glow-mod">20th-21st Jan,2023</div>
+              <div class="comment">
+                <p>
+                  <b>08:00 AM - 07:30 PM</b> <br />
+                  <b>Grand Finale at TCET</b>
+                </p>
+
+                <p style="color: #fd4556">
+                  <b>06:00 PM - 07:30 PM</b> <br /><b>Closing Ceremony</b>
+                </p>
+                <div class="vertical"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="prizes"></div>
+
+          <div class="inner-responsive-page1">
+            <h1 class="section-heading">Prizes</h1>
+
+            <div class="page-section section">
+              <div class="container pt-0">
+                <div class="row justify-content-center mt-5 ps-5 p-3">
+                  <div
+                    class="col-12 d-flex justify-content-center col-md-6 col-lg-4 mb-1 wow zoomIn"
+                    style="padding: 0px"
+                  >
+                    <div class="ty-prize width-inc shadow-glow2">
+                      <div class="px-2">
+                        <ul class="prize-value list-unstyled">
+                          <center>
+                            <ul>
+                              <img
+                                src="assets/images/2.webp"
+                                alt=""
+                                width="200px"
+                              />
+                            </ul>
+                            <br />
+                            <ul class="fs-inc2">
+                              <span class="fh-money1">&#8377;</span
+                              >20,000 Software
+                            </ul>
+                            <ul class="fs-inc2">
+                              <span class="fh-money1">&#8377;</span
+                              >15,000 Hardware
+                            </ul>
+                          </center>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 d-flex justify-content-center col-md-6 col-lg-4 mb-1 wow zoomIn"
+                    style="padding: 0px"
+                  >
+                    <div class="ty-prize width-inc shadow-glow2">
+                      <div class="px-2">
+                        <ul class="prize-value list-unstyled">
+                          <center>
+                            <ul>
+                              <img
+                                src="assets/images/1.webp"
+                                alt=""
+                                width="200px"
+                              />
+                            </ul>
+                            <br />
+                            <ul class="fs-inc2">
+                              <span class="fh-money1">&#8377;</span
+                              >30,000 Software
+                            </ul>
+                            <ul class="fs-inc2">
+                              <span class="fh-money1">&#8377;</span
+                              >25,000 Hardware
+                            </ul>
+                          </center>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 d-flex justify-content-center col-md-6 col-lg-4 mb-1 wow zoomIn"
+                    style="padding: 0px"
+                  >
+                    <div class="ty-prize width-inc shadow-glow2">
+                      <div class="px-2">
+                        <ul class="prize-value list-unstyled">
+                          <center>
+                            <ul>
+                              <img
+                                src="assets/images/3.webp"
+                                alt=""
+                                width="200px"
+                              />
+                            </ul>
+                            <br />
+                            <ul class="fs-inc2">
+                              <span class="fh-money1">&#8377;</span
+                              >10,000 Software
+                            </ul>
+                          </center>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="sponsorsNav"></div>
+
+          <div class="inner-responsive-page" class="sponsors" id="sponsors">
+            <h1 class="section-heading">Sponsors</h1>
+
+            <div class="sponsor-wrapper">
+              <div class="sponsor-wrapper-in">
+                <div id="current-sponsor">
+                  <h3>Title Partners</h3>
+                  <div
+                    class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 justify-content-center align-items-center m-2"
+                  >
+                    <div class="p-3">
+                      <div class="img-place client-img">
+                        <a href="https://devfolio.co/" target="_blank">
+                          <img src="assets/images/sponsors/devfolio.png" />
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="p-3">
+                      <div class="img-place client-img">
+                        <a href="https://polygon.technology/" target="_blank">
+                          <img src="assets/images/sponsors/polygon.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Powered by</h3>
+                  <div
+                    class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 justify-content-center align-items-center m-2"
+                  >
+                    <div class="p-3">
+                      <div class="img-place client-img">
+                        <a target="_blank">
+                          <img src="assets/images/sponsors/repl.png" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="p-3">
+                      <div class="img-place client-img">
+                        <a href="https://solana.com/" target="_blank">
+                          <img src="assets/images/sponsors/Solana.png" />
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="p-3">
+                      <div class="img-place client-img">
+                        <a href="https://filecoin.io " target="_blank">
+                          <img src="assets/images/sponsors/filecoin.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <section id="gallery">
+            <center><h1 class="section-heading">Gallery</h1></center>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+              rel="stylesheet"
+            />
+
+            <div class="gallery">
+              <div class="gallery__column">
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-1.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-2.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-4.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery__column">
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-3.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-5.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-6.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery__column">
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-7.jpg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-8.JPG" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-9.JPG" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery__column">
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-14.jpeg" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+
+                <a target="_blank" class="gallery__link">
+                  <figure class="gallery__thumb">
+                    <img src="assets/blog-13.JPG" class="gallery__image" />
+                    <figcaption class="gallery__caption"></figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div class="inner-responsive-page" id="FAQs">
+            <div class="FAQs-wrapper" style="width: 100%">
+              <h1 class="section-heading">FAQs</h1>
+              <div class="accordion faq-wrapper" id="accordionParent">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What is the mode of the Hackathon?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      It is an 36 hours offline Hackathon.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Are meals and accommodation provided at the venue?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      All the participants will be provided food and
+                      accommodation for outstation participants will be
+                      provided.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What is the entry free?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      There is No Registration fee.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Will there be any shortlisting before the hackathon?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      Yes, all teams are required to submit their ideas. After
+                      the application deadline, we shall review all the
+                      submissions and shortlist the teams with the best ideas in
+                      each track for the Finale.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      When will Hackanova 2.0 take place?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      Hackanova 2.0 is scheduled to take place on 20th-21st
+                      January over 36 hours.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      What should be the team size?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      A team should comsist 4 members although participants can
+                      register individually on Devfolio. Projects are to be
+                      submitted as a team on Devfolio, so participants need to
+                      finalize their teams during the event to submit their
+                      projects.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                      aria-expanded="false"
+                      aria-controls="collapseNine"
+                    >
+                      Having another question that is not in the Faq?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingNine"
+                    data-bs-parent="#accordionParent"
+                  >
+                    <div class="accordion-body">
+                      You can contact us via mail or drop your query in the
+                      comment sections on our Social Media handles.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- inner-responsive-page -->
+          <footer class="footer">
+            <div class="socials">
+              <ul class="socialbtns">
+                <li>
+                  <a href="https://discord.gg/kwFJZsYnHK" target="_blank"
+                    ><i class="fab fa-discord"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/tsdw_tcet/" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+
+          <!-- end footer -->
+
+          <footer class="footer-distributed">
+            <div class="footer-left">
+              <h3><img src="assets/images/logo.png" alt="" width="170px" /></h3>
+
+              <p class="footer-company-name">Copyright TSDW © 2022-2023</p>
+            </div>
+
+            <div class="footer-center">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>
+                  <span>Thakur College of Engineering and Technology</span>
+                  Kandivali East,Mumbai-400065
+                </p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>Advait Chirmule - +91 8879861532</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>
+                  <a href="mailto:support@company.com"
+                    >tcet.hackanova@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-right">
+              <p class="footer-company-about" style="color: white">
+                <span>About TSDW</span>
+                TSDW is the representative body of the students of TCET, and is
+                responsible for all the major technical, sports and cultural
+                activities that are organized in the institute including
+                HACKANOVA, SOJOURN, ENERTIA and LEADERSHIP SUMMITS.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="assets\js\countdown.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 1200,
+          smartSpeed: 1500,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          lazyLoad: false,
+          dots: true,
+          dotsEach: 3,
+          nav: true,
+          touchDrag: true,
+          navText: ["", ""],
+          loop: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+              loop: true,
+            },
+            300: {
+              items: 2,
+              nav: true,
+              loop: true,
+            },
+            700: {
+              items: 3,
+              nav: false,
+              loop: true,
+            },
+            1100: {
+              items: 4,
+              loop: true,
+            },
+            1500: {
+              items: 6,
+              loop: true,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script src="assets/js//bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      var stats = document.querySelector("#stats");
+      var statsLoaded = false;
+      var observer = new IntersectionObserver(
+        function (entries, observer) {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+            if (!statsLoaded) {
+              statsLoaded = true;
+              $(".stat_numbers").each(function () {
+                $(this)
+                  .prop("Counter", 0)
+                  .animate(
+                    {
+                      Counter: $(this).text(),
+                    },
+                    {
+                      duration: 3000,
+                      easing: "swing",
+                      step: function (now) {
+                        $(this).text(Math.ceil(now));
+                      },
+                    }
+                  );
+              });
+            }
+          });
+        },
+        {
+          threshold: 0,
+          rootMargin: "-200px 1500px -200px 1500px",
+        }
+      );
+
+      observer.observe(stats);
+    </script>
+    <!-- <script src="assets/js/preloader.js"></script> -->
+    <!-- Devfolio Integration -->
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/Menu-link.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+  </body>
+</html>
