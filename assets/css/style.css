@@ -2,17 +2,22 @@
   font-family: "VALORANT";
   font-style: normal;
   font-weight: 400;
-  src: local("VALORANT"), url("https://fonts.cdnfonts.com/s/37505/Valorant Font.woff") format("woff");
+  src: local("VALORANT"),
+    url("https://fonts.cdnfonts.com/s/37505/Valorant Font.woff") format("woff");
 }
 
 @font-face {
   font-family: "Tungsten Bold";
   src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
-  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"),
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold")
+      format("svg");
 }
 #myVideo {
   position: fixed;
@@ -259,16 +264,16 @@ body {
 .outline-text {
   font-family: VALORANT;
   color: var(--background-color);
-  text-shadow: white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px,
-    white 0px 0px 3px;
+  text-shadow: white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px,
+    white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px;
 }
 
 .hack-text {
   font-size: 15vh;
   margin-left: 20px;
   line-height: 10vh;
-  text-shadow: white 0px 0px 4px, white 0px 0px 4px, white 0px 0px 4px, white 0px 0px 4px, white 0px 0px 4px,
-    white 0px 0px 4px;
+  text-shadow: white 0px 0px 4px, white 0px 0px 4px, white 0px 0px 4px,
+    white 0px 0px 4px, white 0px 0px 4px, white 0px 0px 4px;
 }
 
 .red-line {
@@ -1911,7 +1916,7 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
 
 .fh-money1 {
   font-weight: 500;
-  color: #277861;
+  color: #fff;
 }
 
 .ty-prize:hover {
@@ -1935,12 +1940,12 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
 
 @-webkit-keyframes glow-new {
   from {
-    text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861, 0 0 4px #277861, 0 0 5px #277861, 0 0 6px #277861,
-      0 0 7px #277861;
+    text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861,
+      0 0 4px #277861, 0 0 5px #277861, 0 0 6px #277861, 0 0 7px #277861;
   }
   to {
-    text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861, 0 0 4px #277861, 0 0 5px #277861, 0 0 6px #277861,
-      0 0 7px #277861;
+    text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861,
+      0 0 4px #277861, 0 0 5px #277861, 0 0 6px #277861, 0 0 7px #277861;
   }
 }
 
