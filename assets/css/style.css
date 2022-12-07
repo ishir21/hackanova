@@ -1580,41 +1580,9 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
   max-height: 50%;
 }
 
-/*.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  border-radius: 0;
-}*/
-
-/*.carousel-inner {
-  padding: 2.5em;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-100%);
-
-}*/
-
-/*@media (max-width: 768px) and (min-width: 0px) {
-  .slider {
-    padding: 3px;
-  }
-  .card {
-    padding: 3px;
-  }
-}*/
-
 .circular-image {
   border-radius: 50%;
 }
-
-/*---------------------Team End--------------*/
 
 /* about */
 
@@ -1829,11 +1797,6 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
   transition: 0.5s;
 }
 
-/* .socialbtns li a:hover{
-   color:white;
-
-} */
-
 .socialbtns li a::before {
   position: absolute;
   top: 0;
@@ -1938,6 +1901,12 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
   padding: 2rem !important;
 }
 
+@media only screen and (max-width: 700px) {
+  .comment p {
+    font-size: 0.8rem;
+  }
+}
+
 @-webkit-keyframes glow-new {
   from {
     text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861,
@@ -1946,15 +1915,5 @@ background: url("https://pbs.twimg.com/ext_tw_video_thumb/1248732574224207872/pu
   to {
     text-shadow: 0 0 1px #277861, 0 0 2px #277861, 0 0 3px #277861,
       0 0 4px #277861, 0 0 5px #277861, 0 0 6px #277861, 0 0 7px #277861;
-  }
-}
-
-/* @media only screen and (max-width:850px) {
-	.ty-prize {margin-left: 1rem;width:40vh;}
-} */
-
-@media only screen and (max-width: 700px) {
-  .comment p {
-    font-size: 0.8rem;
   }
 }
